@@ -18,4 +18,6 @@
 
 ### Lesson 3 Server Actions
 
+- Suspense
+- SEO dynamic MetaTags.
 -

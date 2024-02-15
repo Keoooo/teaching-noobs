@@ -1,16 +1,16 @@
+"use client";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-//TODO: next js router.push next/navigations
 
 export function InputWithButton() {
   const [coin, setCoin] = useState("");
-  // const navigate = useNavigate(); // useHistory for React Router v5
+  const router = useRouter(); // Initialize useRouter
 
   const handleSearch = () => {
-    // Redirect to the dynamic page, assuming the path is `/search/:coin`
-    // navigate(`/search/${coin}`);
+    router.push(`/search/${coin}`);
   };
 
   return (
